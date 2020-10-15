@@ -15,8 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch (e) {
         render(<RedBox error={e} />, reactElement)
       }
-    }
-    else {
+    } else {
       render(<App />, reactElement)
     }
   }
