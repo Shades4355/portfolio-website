@@ -2,14 +2,16 @@ import React from 'react'
 
 const PortfolioContainer = props => {
   let name = props.name
+  let description = props.description
+  let url = props.url
 
   return(
     <ul className='textbox'>
       <li>
-        {name}
+        <a href={url}>{name}</a>
       </li>
       <li>
-        Description Goes Here
+        {description}
       </li>
     </ul>
   )

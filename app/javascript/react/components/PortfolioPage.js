@@ -29,7 +29,8 @@ const PortfolioPage = (props) => {
       <PortfolioContainer
         key={project['id']}
         name={project["name"]}
-        
+        description={project['description']}
+        url={project['clone_url']}
       />
     )
   })
