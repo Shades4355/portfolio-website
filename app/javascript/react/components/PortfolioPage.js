@@ -1,12 +1,52 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
+import PortfolioContainer from './PortfolioContainer'
 
 const PortfolioPage = (props) => {
+  const [getPortfolio, setPortfolio] = useState([])
 
-  return (
-    <div className='body'>
-      hello from PortfolioPage
-    </div>
-  )
+  useEffect (() => {
+    fetch('/api/v1/portfolio',
+  {credee3ntials: 'same-origin'})
+  .then(response => {
+    if (response.ok) {
+      return response
+    } else {
+      let errorMessage = `${response.status} (${response.statusText})`,
+      error = new Error(errorMessage)
+      throw error
+    }
+  })
+  .then(response => response.json())
+  .then(responseBody => {
+    setPortfolio(responseBody)
+  })
+  .catch(error => console.log(`Error in fetcch: ${error.message}`))
+  }, [])
+
+  let portfolioContainer = getPortfolio.map(project => {
+    return(
+      <PortfolioContainer
+        key={project['id']}
+        name={project["name"]}
+        
+      />
+    )
+  })
+
+  if (getPortfolio) {
+    return (
+      <div>
+        {portfolioContainer}
+      </div>
+    )
+  } else {
+      return(
+        <div>
+          We apologize; the github API seems to not be responding at the moment
+        </div>
+      )
+    }
 }
 
 export default PortfolioPage
