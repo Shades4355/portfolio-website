@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Patrick "Shades" Wetzel-Meyers' Portfolio</title>
+  <title>Patrick "Shades" Wetzel-Meyers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
@@ -9,13 +9,8 @@
 <body>
 
   <nav class="top-bar black-background">
-    <h1><a href="/">Patrick "Shades" Wetzel-Meyers' Portfolio</a></h1>
-
-    <!-- <section class="top-bar-section">
-      <ul class="right">
-
-      </ul>
-    </section> -->
+    <h1><a href="/">Patrick "Shades" Wetzel-Meyers</a></h1>
+    <li><a href='/portfolio' class='left'>Portfolio</a></li>
   </nav>
 
   <%- flash.each do |key, value| -%>
