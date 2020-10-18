@@ -1,0 +1,50 @@
+// import fonts
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+// import colors
+$cream: #FFFEF2;
+$dark-grey: #2B2D2F;
+
+// Classes and Such
+.body {
+  font-family: 'ariel';
+  font-size: 24px;
+  background-color: $dark-grey;
+}
+
+.textbox {
+  margin: auto;
+  margin-top: 0;
+  background-color: $cream;
+  border: 1px solid black;
+  opacity: 0.6;
+  border-radius: 25px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.black-background {
+  background-color: black;
+}
+
+h1, h2, h3, title {
+  font-family: 'Sriracha';
+  color: red;
+}
+
+p {
+  text-indent: 50px;
+}
+
+a {
+  color: red;
+}
