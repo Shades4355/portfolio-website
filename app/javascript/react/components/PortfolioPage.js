@@ -25,13 +25,14 @@ const PortfolioPage = (props) => {
   }, [])
 
   if (getPortfolio) {
+    debugger
     let portfolioContainer = getPortfolio.map(project => {
       return(
         <PortfolioContainer
           key={project['id']}
           name={project["name"]}
           description={project['description']}
-          url={project['clone_url']}
+          url={project['url']}
         />
       )
     })
