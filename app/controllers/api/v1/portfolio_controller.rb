@@ -6,7 +6,7 @@ class Api::V1::PortfolioController < ApplicationController
     projects = []
 
     portfolio.each do |project|
-      projects << {id: project['id'], name: project['name'], url: project['url'], description: project['description']}
+      projects << {id: project['id'], name: project['name'], url: project['clone_url'], description: project['description']}
     end
 
     render json: projects
