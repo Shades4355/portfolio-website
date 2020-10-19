@@ -13,7 +13,7 @@ export const LandingPage = (props) => {
       />
       <div className="textbox">
         <p>
-          My name is Patrick Wetzel-Meyers, but having grown up in a town and school system with many other Patricks my own age, I prefer to go by "Shades". I am a full-stack developer in the JavaScript and Ruby languages.
+          My name is Patrick Wetzel-Meyers, but having grown up in a town and school system with many other Patricks my own age, I prefer to go by "Shades". I am a full-stack developer trained in the JavaScript and Ruby languages.
         </p>
         <p>
           I started my coding journey with Learn Ruby the Hard Way, before signing up for Launch Academy's Coding Bootcamp.

@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   end
 
 
-  get '/portfolio', to: 'homes#index'
+  get '/portfolio', to: 'portfolio#index'
 end
