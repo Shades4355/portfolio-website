@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Image from '../images/shades.png'
+
 export const LandingPage = (props) => {
   return (
     <div className='body'>
@@ -7,7 +9,7 @@ export const LandingPage = (props) => {
         Hello and Welcome!
       </h2>
       <img
-        src="/assets/shades.png"
+        src={Image}
         alt='Patrick "Shades", sitting in a car, smiling'
         className="center"
       />
