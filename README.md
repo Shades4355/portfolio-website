@@ -13,7 +13,12 @@ command: "make_it_so rails [project name]"
 * React version: ~16.8.0
 
 ### Added Gems and Dependencies
-* None
+* HTTParty
 
 ### Removed/Unused Gems and Dependencies
 * Devise (unused)
+
+
+### Links
+* https://github.com/Shades4355/portfolio-website
+* https://shades-portfolio.herokuapp.com/
