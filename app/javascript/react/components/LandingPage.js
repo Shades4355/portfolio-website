@@ -7,7 +7,7 @@ export const LandingPage = (props) => {
         Hello and Welcome!
       </h2>
       <img
-        src="/assets/shades.png"
+        src="./assets/shades.png"
         alt='Patrick "Shades", sitting in a car, smiling'
         className="center"
       />
