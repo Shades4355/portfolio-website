@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import PortfolioContainer from './PortfolioContainer'
 
 const PortfolioPage = (props) => {
-  const [getPortfolio, setPortfolio] = useState([])
+  const [getPortfolio, setPortfolio] = useState()
 
   useEffect (() => {
     fetch('/api/v1/portfolio',
@@ -24,18 +24,18 @@ const PortfolioPage = (props) => {
   .catch(error => console.log(`Error in fetcch: ${error.message}`))
   }, [])
 
-  let portfolioContainer = getPortfolio.map(project => {
-    return(
-      <PortfolioContainer
-        key={project['id']}
-        name={project["name"]}
-        description={project['description']}
-        url={project['clone_url']}
-      />
-    )
-  })
-
   if (getPortfolio) {
+    let portfolioContainer = getPortfolio.map(project => {
+      return(
+        <PortfolioContainer
+          key={project['id']}
+          name={project["name"]}
+          description={project['description']}
+          url={project['clone_url']}
+        />
+      )
+    })
+
     return (
       <div>
         {portfolioContainer}
