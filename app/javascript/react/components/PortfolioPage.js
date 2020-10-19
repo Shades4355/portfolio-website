@@ -25,7 +25,6 @@ const PortfolioPage = (props) => {
   }, [])
 
   if (getPortfolio) {
-    debugger
     let portfolioContainer = getPortfolio.map(project => {
       return(
         <PortfolioContainer
