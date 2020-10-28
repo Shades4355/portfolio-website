@@ -6,7 +6,7 @@ const PortfolioContainer = props => {
   let url = props.url
 
   return(
-    <ul className='textbox3'>
+    <ul className='textbox2'>
       <ul>
         <h3>
           <a href={url}>{name}</a>
