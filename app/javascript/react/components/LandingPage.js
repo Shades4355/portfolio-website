@@ -24,10 +24,6 @@ export const LandingPage = (props) => {
         <p>
           With a special interest in: Ruby and Python
         </p>
-        <br />
-        <p>
-          My projects can be seen on my <a href='/portfolio'>Portfolio</a> page.
-        </p>
       </div>
     </div>
   )
