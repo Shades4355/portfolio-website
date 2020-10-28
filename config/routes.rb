@@ -9,4 +9,5 @@ Rails.application.routes.draw do
 
 
   get '/portfolio', to: 'portfolio#index'
+  get '/about-me', to: 'homes#index'
 end
