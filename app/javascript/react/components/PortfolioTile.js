@@ -7,14 +7,14 @@ const PortfolioContainer = props => {
 
   return(
     <ul className='textbox3'>
-      <li>
+      <ul>
         <h3>
           <a href={url}>{name}</a>
         </h3>
-      </li>
-      <li>
+      </ul>
+      <ul>
         <strong>{description}</strong>
-      </li>
+      </ul>
     </ul>
   )
 }
