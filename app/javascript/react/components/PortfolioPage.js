@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
-import PortfolioContainer from './PortfolioContainer'
+import PortfolioTile from './PortfolioTile'
 
 const PortfolioPage = (props) => {
   const [getPortfolio, setPortfolio] = useState()
@@ -25,9 +25,9 @@ const PortfolioPage = (props) => {
   }, [])
 
   if (getPortfolio) {
-    let portfolioContainer = getPortfolio.map(project => {
+    let portfolioTile = getPortfolio.map(project => {
       return(
-        <PortfolioContainer
+        <PortfolioTile
           key={project['id']}
           name={project["name"]}
           description={project['description']}
@@ -37,15 +37,15 @@ const PortfolioPage = (props) => {
     })
 
     return (
-      <div>
-        {portfolioContainer}
+      <div className='body'>
+        {portfolioTile}
       </div>
     )
   } else {
       return(
-        <div>
-          We apologize; the github API seems to not be responding at the moment
-        </div>
+        <h3>
+          We apologize; the github API seems to not be responding at the moment. Please try again later.
+        </h3>
       )
     }
 }
