@@ -3,7 +3,7 @@ import React from 'react'
 const AboutMe = () => {
 
   return(
-    <div className='textbox2'>
+    <div className='textbox'>
       <p>
         I started my coding journey with Learn Ruby the Hard Way, before signing up for Launch Academy's Coding Bootcamp.
       </p>
