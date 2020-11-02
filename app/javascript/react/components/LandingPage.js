@@ -11,7 +11,7 @@ export const LandingPage = (props) => {
       <img
         src={Image}
         alt='Patrick "Shades", sitting in a car, smiling'
-        className="center"
+        className="center margin-bottom"
       />
       <div className="textbox">
         <p>
