@@ -44,7 +44,7 @@ const PortfolioPage = (props) => {
   } else {
       return(
         <h3>
-          We apologize; the github API seems to not be responding at the moment. Please try again later.
+          If you are reading this, try refreshing.
         </h3>
       )
     }
