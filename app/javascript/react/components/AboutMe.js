@@ -1,8 +1,16 @@
 import React from 'react'
 
+import Image from '../images/shades.png'
+
 const AboutMe = () => {
 
   return(
+    <div>
+      <img
+        src={Image}
+        alt='Patrick "Shades", sitting in a car, smiling'
+        className="center margin-bottom"
+      />
     <div className='textbox'>
       <p>
         I started my coding journey with Learn Ruby the Hard Way, before signing up for Launch Academy's Coding Bootcamp.
@@ -26,6 +34,7 @@ const AboutMe = () => {
       <p>
         ‘Habit Quest’ allows logged-in users to create and edit habits they want to track; assigning each habit a score from -5 to 5, where a negative score represents a habit you wish to break, and a positive score represents a habit you wish to form or maintain. Once created, you can track your daily habits simply by clicking on said habit’s name. Once tracked, you can see your score for this month through the past 3 months as a line graph on your user profile page.
       </p>
+    </div>
     </div>
   )
 }

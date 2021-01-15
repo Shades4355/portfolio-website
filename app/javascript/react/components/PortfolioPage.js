@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import PortfolioTile from './PortfolioTile'
+import Image from '../images/shades.png'
 
 const PortfolioPage = (props) => {
   const [getPortfolio, setPortfolio] = useState()
@@ -37,10 +38,19 @@ const PortfolioPage = (props) => {
     })
 
     return (
-      <div className='body'>
-        {portfolioTile}
+      <div>
+      <img
+        src={Image}
+        alt='Patrick "Shades", sitting in a car, smiling'
+        className="center margin-bottom"
+      />
+        <div className='body'>
+          {portfolioTile}
+        </div>
+        <div className="margin-bottom">
+        </div>
       </div>
-    )
+      )
   } else {
       return(
         <h3>
