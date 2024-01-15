@@ -21,4 +21,3 @@ command: "make_it_so rails [project name]"
 
 ### Links
 * https://github.com/Shades4355/portfolio-website
-* https://shades-portfolio.herokuapp.com/
